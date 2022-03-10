@@ -1,0 +1,95 @@
+/* 
+font-family: 'Rubik', sans-serif;*/
+body{
+    font-family: 'Rubik', sans-serif;
+    /*font-family: 'Roboto Slab', serif;*/
+    background-color: rgb(5, 22, 82);
+    color: aliceblue;
+}
+.head{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/1/14/Mumbai_Skyline_at_Night.jpg);
+    height: 35em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto auto;
+    display: block;
+    margin-top: -3.4em;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    position: relative;
+    text-align: center;
+}
+/*.head > h1{
+    position: relative;
+    text-align:center;
+    font-size: 5em;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(10%, -25%);
+}
+.head > h2{
+    text-align: center;
+    font-size: 2em;
+    top: 50%;
+}*/
+#text{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: (-20%, -25%);
+}
+#text > h1{
+    font-size: 5em;
+}
+#text > h2{
+    font-size: 2em;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    
+}
+#container > img{
+    width: 20rem;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-left: 0%;
+}
+#TLDR > h1{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.text{
+    margin: auto auto auto auto;
+}
+#box2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#innerbox1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+    
+}
+.proj > h1{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.achi > h2{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.cv > h1{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.up{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
