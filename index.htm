@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./Styles/cards.css">
+
     <title>Portfolio</title>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -31,6 +34,9 @@
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -46,7 +52,7 @@
             <div id="TLDR">
                 <h1>TL;DR</h1>
                 <div id="container">
-                <img class="img-fluid rounded mx-auto d-block" src="/fart.jpg">
+                <img class="img-fluid rounded mx-auto d-block" src="./Assest/fart.jpg">
                 <div class="text">
                   <p>I am an aspiring full stack developer with other interests ranging from ML&AI to game designing.</p>
                     <p>I'm junior student studying computer engineering at WCOE.</p>
@@ -57,7 +63,7 @@
         </div>
         <div class="proj">
           <h1>Projects</h1>
-          <div id="innerbox1">
+          <!--div id="innerbox1">
               <h2>Crypcipher</h2>
               <p>Me and my project members had created a simple application which represents basic cipher such as Vigenere,Railfence etc.
               The whole point of the project was to get a better understanding about cryptography and ciphers.
@@ -69,9 +75,41 @@
           <p>It was a fun project I made to automate daily repetative tasks, it was based on pyautogui library.</p>
           <h2>mudi-bot</h2>
           <p>It is a reddit bot which replies certain quotes if summoned by the buzzword "mudi"</p>
-        </div>
-        </div>
+        </div-->
+        <section class="hero-section">
+          <div class="card-grid">
+            <a class="card" href="#">
+              <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
+              <div class="card__content">
+                <p class="card__category">Project</p>
+                <h3 class="card__heading">Hancon</h3>
+              </div>
+            </a>
 
+            <a class="card" href="#">
+              <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+              <div class="card__content">
+                <p class="card__category">Project</p>
+                <h3 class="card__heading">Vaani</h3>
+              </div>
+            </a>
+            <a class="card" href="#">
+              <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+              <div class="card__content">
+                <p class="card__category">Project</p>
+                <h3 class="card__heading">Portfolio Website</h3>
+              </div>
+            </li>
+            <a class="card" href="#">
+              <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+              <div class="card__content">
+                <p class="card__category">Project</p>
+                <h3 class="card__heading">Pomodoor</h3>
+              </div>
+            </a>
+          </div>
+        </section>
+        </div>
         <div class="achi">
           <h2>Achievements</h2>
           <div id="box2">
@@ -84,10 +122,11 @@
           <h1>CV</h1>
           <a href="https://drive.google.com/file/d/1gnJS7-BIki9P-1OfEDcb5P_Y77RvAHNl/view?usp=sharing"><p class="text-center">Here's a download link for my CV</p></a>
         </div>
-        <h1>Upcoming projects-</h1>
         <div class="up">
-          <h2>Nucleon engine</h2>
-        <h2>Discord bot</h2>
+          <h1>Upcoming projects-</h1>
+          <a href="cards_prog.html">Click me!</a>
+          <!--h2>Nucleon engine</h2>
+        <h2>Discord bot</h2-->
         </div> 
     </div>
 </head>

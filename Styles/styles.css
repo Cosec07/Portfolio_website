@@ -88,8 +88,7 @@ body{
     text-align: center;
     margin-top: 0.5rem;
 }
-.up{
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+.up > h1{
+    text-align: center;
+    margin-top: 0.5 rem;
 }
-
