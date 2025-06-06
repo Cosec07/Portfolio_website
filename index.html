@@ -1,0 +1,128 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./Styles/styles.css">
+  <link rel="stylesheet" href="./Styles/cards.css">
+  <title>Portfolio</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">KR</a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#TLDR">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Projects">Projects</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="head">
+  <div id="text">
+    <h1>Hey I'm Kaushik</h1>
+    <h2>Wannabe software developer</h2>
+  </div>
+</div>
+
+<div id="TLDR">
+  <h1>TL;DR</h1>
+  <div id="container">
+    <img class="img-fluid rounded mx-auto d-block" src="./Assest/fart.jpg">
+    <div class="text">
+      <p>I am an aspiring Data Scientist with other interests ranging from Physics to music.</p>
+      <p>My goal is to utilize the power of Deep Learning in the areas where it currently isn't being used.</p>
+      <p>I'm a final year student studying computer engineering at University of Mumbai.</p>
+      <p>I'm Diligent, hardworking and quick learner.</p>
+    </div>
+  </div>
+</div>
+
+<div class="proj">
+  <h1>Projects</h1>
+  <section id="Projects" class="hero-section">
+    <input type="text" id="project-search" placeholder="Filter projects" class="mb-3">
+    <div class="card-grid">
+      {% for project in site.data.projects %}
+      <a class="card" href="{{ project.url | default: '#' }}">
+        <div class="card__background" style="background-image: url({{ project.image }})"></div>
+        <div class="card__content">
+          <p class="card__category">{{ project.category }}</p>
+          <h3 class="card__heading">{{ project.title }}</h3>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+
+<div id="Resume" class="cv">
+  <h1>CV</h1>
+  <a href="https://drive.google.com/file/d/1gnJS7-BIki9P-1OfEDcb5P_Y77RvAHNl/view?usp=sharing">
+    <p class="text-center">Here's a download link for my CV</p>
+  </a>
+  <a href="timeline.html">Click me</a>
+</div>
+
+<div class="achi">
+  <h2>Achievements</h2>
+  <div id="box2">
+    <p>I have achieved this and that, some more of this and some more of that.
+    I can insert so many things here which i can't think of right now.</p>
+  </div>
+</div>
+
+<div class="up">
+  <h1>Upcoming projects-</h1>
+  <a href="cards_prog.html">Click me!</a>
+</div>
+
+<h2>Like what you see?</h2>
+<p>Would love to hear your thoughts</p>
+<form id="contact-form" action="https://formspree.io/f/mwkajnly" method="POST">
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text" required>
+  <label for="mail">Email</label>
+  <input id="mail" name="_replyto" type="email" required>
+  <button type="submit">Send</button>
+</form>
+<div id="form-status"></div>
+
+<footer>Connect with me</footer>
+<div id="socials">
+  <ul>
+    <li>Linkedin</li>
+    <li>Github</li>
+    <li>Twitter</li>
+  </ul>
+</div>
+
+<p class="text-sm-center">Made with ❤ by me!</p>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0VHN5P3EQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V0VHN5P3EQ');
+</script>
+<script src="./JS/form.js"></script>
+</body>
+</html>
