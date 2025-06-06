@@ -1,13 +1,13 @@
 /* 
 font-family: 'Rubik', sans-serif;*/
 body{
-    font-family: 'Rubik', sans-serif;
-    /*font-family: 'Roboto Slab', serif;*/
-    background-color: rgb(5, 22, 82);
-    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+    color: #f0f0f0;
+    scroll-behavior: smooth;
 }
 .head{
-    background: url(https://upload.wikimedia.org/wikipedia/commons/1/14/Mumbai_Skyline_at_Night.jpg);
+    background: url(https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1650&q=80);
     height: 35em;
     background-attachment: fixed;
     background-position: center;
@@ -43,9 +43,11 @@ body{
 }
 #text > h1{
     font-size: 5em;
+    font-family: 'Playfair Display', serif;
 }
 #text > h2{
     font-size: 2em;
+    font-weight: 300;
 }
 #container{
     display: flex;
@@ -61,6 +63,7 @@ body{
 #TLDR > h1{
     text-align: center;
     margin-top: 0.5rem;
+    font-family: 'Playfair Display', serif;
 }
 .text{
     margin: auto auto auto auto;
