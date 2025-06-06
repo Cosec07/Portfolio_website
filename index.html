@@ -13,6 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./Styles/styles.css">
   <link rel="stylesheet" href="./Styles/cards.css">
+  <link rel="stylesheet" href="./Styles/timeline.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./JS/timeline.js"></script>
   <title>Portfolio</title>
 </head>
 <body>
@@ -40,7 +43,7 @@
   </div>
 </div>
 
-<div id="TLDR">
+<div id="TLDR" class="fade-in-section">
   <h1>TL;DR</h1>
   <div id="container">
     <img class="img-fluid rounded mx-auto d-block" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=faces&fit=crop&h=200&w=200" alt="Profile picture">
@@ -53,7 +56,7 @@
   </div>
 </div>
 
-<div class="proj">
+<div class="proj fade-in-section">
   <h1>Projects</h1>
   <section id="Projects" class="hero-section">
     <input type="text" id="project-search" placeholder="Filter projects" class="mb-3">
@@ -71,26 +74,27 @@
   </section>
 </div>
 
-<div id="Resume" class="cv">
+<div id="Resume" class="cv fade-in-section">
   <h1>CV</h1>
   <a href="https://drive.google.com/file/d/1gnJS7-BIki9P-1OfEDcb5P_Y77RvAHNl/view?usp=sharing">
     <p class="text-center">Download my latest CV</p>
   </a>
-  <a href="timeline.html">Click me</a>
+  {% include_relative timeline.html %}
 </div>
 
-<div class="achi">
+<div class="achi fade-in-section">
   <h2>Achievements</h2>
   <div id="box2">
     <p>My research has been presented at leading AI conferences and published in several peer reviewed journals.</p>
   </div>
 </div>
 
-<div class="up">
+<div class="up fade-in-section">
   <h1>Upcoming Projects</h1>
   <a href="cards_prog.html">Click me!</a>
 </div>
 
+<div class="contact fade-in-section">
 <h2>Interested in collaborating?</h2>
 <p>Feel free to reach out</p>
 <form id="contact-form" action="https://formspree.io/f/mwkajnly" method="POST">
@@ -101,6 +105,7 @@
   <button type="submit">Send</button>
 </form>
 <div id="form-status"></div>
+</div>
 
 <footer>Connect with me</footer>
 <div id="socials">
